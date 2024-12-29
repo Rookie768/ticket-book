@@ -1,0 +1,176 @@
+body, html, #root {
+  margin: 0;
+  height: 100%;
+}
+
+.headline {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3px; /* Adds spacing below the headline */
+  color: #333; /* Dark gray text color */
+}
+
+
+.container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+.left, .right {
+  flex: 1; /* Equal width for both sections */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content */
+}
+
+.left {
+  background-color: #f0f0f0; /* Light background color */
+}
+
+.right {
+  background-color: #28a745; /* Green background color */
+  color: white;
+  font-size: 24px;
+}
+
+.maths-copy {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns */
+  grid-gap: 5px; /* Space between cells */
+  background-color: #fff;
+  padding: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cell {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin: 2px;
+  font-size: 16px;
+  color: #000;
+}
+
+.cell.booked {
+  background-color: yellow; /* Yellow for booked seats */
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booked-seats {
+  background-color: #007bff;
+  color: white;
+}
+
+.available-seats {
+  background-color: #28a745;
+  color: white;
+}
+
+.booked-seats:hover,
+.available-seats:hover {
+  opacity: 0.8;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #a71d2a;
+}
+
+
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0; /* Space between rows */
+  color: #333;
+  width: 100%; /* Ensure the rows take full width of the box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-row {
+  gap: 10px; /* Space between input and button */
+}
+
+.input-bar {
+  width: 70%; /* Adjust width of the input field */
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.book-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.reset-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #dc3545; /* Red color for reset button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #a71d2a; /* Darker red on hover */
+}
+
